@@ -12,5 +12,66 @@
 
 .page {
   min-inline-size: 320px;
-  min-block-size: 100dvb;
+  min-block-size: 700px;
+  block-size: 100%;
+  background-image: var(--bg-image);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-family-primary);
+  font-variation-settings: 'wght' var(--weight-regular), 'wdth' var(--wdth);
+}
+
+.header {
+  background-color: var(--bg-color);
+  margin-top: 100px;
+  margin-bottom: 98px;
+  border: 2px solid var(--themes-color);
+  font-family: var(--font-family-secondary);
+  text-align: center;
+  padding-top: var(--padding-header);
+  padding-bottom: var(--padding-header);
+}
+
+.header .main-title {
+  font-size: var(--title-size);
+  margin-bottom: 20px;
+  line-height: 100%;
+}
+
+.card {
+  background-color: var(--bg-color);
+  border: 2px solid var(--themes-color);
+}
+
+.card:not(:first-child) {
+  margin-top: 50px;
+}
+
+.card-header {
+  padding: 4px 10px;
+}
+
+.card-header h3 {
+  font-variation-settings: 'wght' var(--weight-bold), 'wdth' var(--wdth);
+}
+
+.card-content .image-wrapper {
+  position: relative;
+}
+
+.card-content .image-wrapper img {
+  width: 100%;
+}
+
+.card-content p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.card-button {
+  background-color: var(--bg-color);
+  border: 2px solid var(--themes-color);
+  font-family: var(--font-family-secondary);
+  padding: 12.5px 37px;
 }

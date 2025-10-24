@@ -1,1 +1,43 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    /* Цвета */
+    --bg-image: 
+        repeating-linear-gradient(
+            90deg,
+            #d3d3d3 0px,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            #d3d3d3 0px,
+            #d3d3d3 2px,
+            transparent 2px,
+            transparent 4px
+        ),
+        linear-gradient(
+            180deg,
+            #e7e7e7 0%,
+            #e7e7e7 0.01%,
+            #1a1a1a 100%
+        );
+    --bg-color: #FFF;
+    --themes-color: #000;
+
+    /* Шрифты и начертания */
+    --wdth: 100;
+    --weight-regular: 410;
+    --weight-bold: 715;
+
+    --font-family-primary: 'Inter', sans-serif;
+    --font-family-secondary: 'PressStart2P', monospace;
+    --text-bold: 700;
+    --text-regular: 400;
+    --main-text-size: 18px;
+    --title-size: clamp(2.722rem, 2.722rem + 0.0835vw, 65px);
+
+    /* Отступы */
+    --padding-header: clamp(6.78rem, 5.5rem + 1.91vw, 7.23rem);
+}

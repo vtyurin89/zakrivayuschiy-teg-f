@@ -8,8 +8,15 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: var(--main-text-size);
+  line-height: 100%;
+}
+
 body {
-  margin: 0;
+  min-inline-size: 375px;
+  max-inline-size: 700px;
+  margin: 0 auto;
 }
 
 h1,
