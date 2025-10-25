@@ -279,7 +279,7 @@
               Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.
             </p>
             <p>
-              Boro boro delam toro toro nemikhad...
+              Boro boro delam toro toro nemikhad - digeh digeh nemikham bebinamet...
             </p>
           </div>
         </main>
@@ -297,11 +297,25 @@
       </article>
     </main>
     <footer class="footer">
-      <button class="footer-button">
+      <button 
+        class="footer-button"
+        onclick="window['insert-floppy'].showModal()" 
+        aria-controls="insert-floppy"
+      >
         <img src="images/floppy.svg" />
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
+    <dialog id="insert-floppy">
+      <img src="images/floppy.svg" />
+      <p>Вставьте дискету, чтобы продолжить</p>
+      <button
+        class="footer-button"
+        onclick="window['insert-floppy'].close()"
+      >
+        <span class="button__text">OK</span>
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
