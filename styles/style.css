@@ -114,8 +114,7 @@ button:not(.card__icon-button) {
   overflow: hidden;
 }
 
-button.card__icon-button:focus {
-  padding: 7px 5px;
+button.card__icon-button:focus-visible {
   outline: 2px solid var(--themes-color);
   transition: outline 0.3s ease;
 }
@@ -223,6 +222,30 @@ body:has(dialog[open]) {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+}
+
+svg .sparks {
+  opacity: 0;
+}
+
+svg .contour {
+  transition: fill 0.1s ease;
+}
+
+svg .core {
+  transition: fill 0.3s linear 0.03s;
+}
+
+svg .main-body {
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .core {
+  fill: var(--heart-contour-color);
+}
+
+.like-icon:hover .body {
+  fill: var(--heart-contour-color);
 }
 
 @media (min-width: 768px) {

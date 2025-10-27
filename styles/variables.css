@@ -26,6 +26,9 @@
     --bg-color: #FFF;
     --themes-color: #000;
 
+    --heart-contour-color: #000;
+    --animation-fill-color: #FF0000;
+
     /* Шрифты и начертания */
     --wdth: 100;
     --weight-regular: 410;
