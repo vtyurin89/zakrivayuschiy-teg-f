@@ -146,7 +146,13 @@ button:not(.card__icon-button) {
   overflow: hidden;
 }
 
-button.card__icon-button:focus-visible {
+.card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__icon-button:focus-visible {
   outline: 2px solid var(--themes-color);
   transition: outline 0.3s ease;
 }
@@ -179,6 +185,24 @@ button:not(.card__icon-button):hover .button__text {
   mix-blend-mode: difference;
 }
 
+.footer-button {
+  width: 306px;
+  height: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+  border: 2px solid var(--themes-color);
+  color: var(--themes-color);
+}
+
+.footer-button svg {
+  width: 28px;
+  height: 28px;
+}
+
 .footer-button:hover {
   color: #fff;
 }
@@ -195,7 +219,11 @@ button:not(.card__icon-button):hover .button__text {
 }
 
 .card__like-button {
-  padding: 12.5px 37px;
+  width: 130px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid var(--themes-color);
 }
 
@@ -211,27 +239,12 @@ button:not(.card__icon-button):hover .button__text {
   padding: 50px 0 100px 0;
 }
 
-.footer-button {
-  padding: 17px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin: 0 auto;
-  border: 2px solid var(--themes-color);
-  color: var(--themes-color);
-}
-
-.footer-button svg {
-  width: 28px;
-  height: 28px;
-  /* fill: currentColor; */
-}
-
 .dialog {
   transition: opacity 0.3s ease-in-out;
   font-family: var(--font-family-secondary);
   padding: 30px 40px;
+  width: 341px;
+  max-width: 90vw;
 } 
 
 .dialog-top {
@@ -243,6 +256,7 @@ button:not(.card__icon-button):hover .button__text {
 .dialog svg {
   width: 39px;
   height: 39px;
+  min-width: 39px;
 }
 
 .dialog-text {
@@ -250,6 +264,7 @@ button:not(.card__icon-button):hover .button__text {
   line-height: 150%;
   letter-spacing: 0;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .dialog::backdrop {
@@ -339,6 +354,8 @@ svg .main-body {
 
   .footer-button {
     flex-direction: row;
+    width: 335px;
+    height: 55px;
   }
 }
 
