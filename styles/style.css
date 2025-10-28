@@ -345,6 +345,9 @@ svg .main-body {
   animation: sparks-opacity-animation 0.3s ease-in 0.3s;
 }
 
+.heart {
+  transform-origin: center;
+}
 
 @media (min-width: 768px) {
   .footer-button svg {
