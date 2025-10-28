@@ -108,6 +108,7 @@
   position: absolute;
   right: 25px;
   top: 25px;
+  z-index: 1;
 }
 
 @supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
