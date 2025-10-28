@@ -147,6 +147,12 @@ button:not(.card__icon-button):hover .button__text {
   mix-blend-mode: difference;
 }
 
+.footer-button:hover svg {
+  fill: white;
+  z-index: 10;
+  position: relative;
+}
+
 .button-text {
   position: relative;
 }
@@ -242,6 +248,10 @@ svg .main-body {
   transition: fill 0.3s linear;
 }
 
+.like-icon {
+  transform-origin: center;
+}
+
 .like-icon:hover .core {
   fill: var(--heart-contour-color);
 }
@@ -249,6 +259,40 @@ svg .main-body {
 .like-icon:hover .main-body {
   fill: var(--heart-contour-color);
 }
+
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .heart {
+  animation: scale-animation 0.3s ease-in 0.1s;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-opacity-animation 0.3s ease-in 0.3s;
+}
+
 
 @media (min-width: 768px) {
   .footer-button svg {
