@@ -65,6 +65,38 @@
   width: 100%;
 }
 
+.pic-one {
+  filter: brightness(110%) contrast(120%);
+}
+
+.pic-two {
+  filter: hue-rotate(-90deg);
+}
+
+.pic-three {
+  filter: grayscale(1);
+}
+
+.pic-four {
+  filter: saturate(2) contrast(140%);
+}
+
+.pic-five {
+  filter: invert(1);
+}
+
+.pic-six {
+  filter: contrast(1.5) brightness(0.8) grayscale(0.3);
+}
+
+.pic-seven {
+  filter: blur(0.2rem);;
+}
+
+.pic-eight {
+  filter: sepia(0.6);
+}
+
 .image-logo {
   font-family: var(--font-family-secondary);
   font-size: 14px;
@@ -304,3 +336,4 @@ svg .main-body {
     flex-direction: row;
   }
 }
+
