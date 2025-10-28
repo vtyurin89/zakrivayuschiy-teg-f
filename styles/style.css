@@ -233,10 +233,12 @@ svg .contour {
 }
 
 svg .core {
+  fill: transparent;
   transition: fill 0.3s linear 0.03s;
 }
 
 svg .main-body {
+  fill: transparent;
   transition: fill 0.3s linear;
 }
 
@@ -244,7 +246,7 @@ svg .main-body {
   fill: var(--heart-contour-color);
 }
 
-.like-icon:hover .body {
+.like-icon:hover .main-body {
   fill: var(--heart-contour-color);
 }
 
