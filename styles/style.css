@@ -179,8 +179,13 @@ button:not(.card__icon-button):hover .button__text {
   mix-blend-mode: difference;
 }
 
+.footer-button:hover {
+  color: #fff;
+}
+
 .footer-button:hover svg {
-  fill: white;
+  color: #fff;
+  fill: #fff;
   z-index: 10;
   position: relative;
 }
@@ -206,13 +211,6 @@ button:not(.card__icon-button):hover .button__text {
   padding: 50px 0 100px 0;
 }
 
-.footer-button svg {
-  width: 28px;
-  height: 28px;
-  fill: currentColor;
-  
-}
-
 .footer-button {
   padding: 17px 20px;
   display: flex;
@@ -221,6 +219,13 @@ button:not(.card__icon-button):hover .button__text {
   gap: 8px;
   margin: 0 auto;
   border: 2px solid var(--themes-color);
+  color: var(--themes-color);
+}
+
+.footer-button svg {
+  width: 28px;
+  height: 28px;
+  /* fill: currentColor; */
 }
 
 .dialog {
