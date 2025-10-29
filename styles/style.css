@@ -190,9 +190,16 @@ button:not(.card__icon-button):hover::before {
   transform: scaleX(1);
 }
 
-button:not(.card__icon-button):hover .button__text {
+button:not(.card__icon-button) .button__text {
   z-index: 10;
-  color: white;
+  color: var(--bg-color);
+  mix-blend-mode: difference;
+}
+
+button:not(.card__icon-button) svg {
+  z-index: 10;
+  color: var(--bg-color);
+  position: relative;
   mix-blend-mode: difference;
 }
 
@@ -213,12 +220,6 @@ button:not(.card__icon-button):hover .button__text {
 .footer-button svg {
   width: 28px;
   height: 28px;
-}
-
-.footer-button:hover svg {
-  color: #fff;
-  z-index: 10;
-  position: relative;
 }
 
 .button-text {
