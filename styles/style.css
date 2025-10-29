@@ -58,7 +58,7 @@
   padding: 4px 10px;
 }
 
-.card-header h3 {
+.card-header h2 {
   font-variation-settings: 'wght' var(--weight-bold), 'wdth' var(--wdth);
   line-height: 1.2;
   letter-spacing: 0;
