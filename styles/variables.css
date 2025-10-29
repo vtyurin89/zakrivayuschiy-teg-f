@@ -39,7 +39,8 @@
     --text-bold: 700;
     --text-regular: 400;
     --main-text-size: 18px;
-    --title-size: clamp(2.722rem, 2.722rem + 0.0835vw, 65px);
+    --title-size: clamp(49px, 4.5vw, 65px);
+    --header-text-size: clamp(14px, 1.5972vw, 23px);
 
     /* Отступы */
     --padding-header: clamp(6.78rem, 5.5rem + 1.91vw, 7.23rem);

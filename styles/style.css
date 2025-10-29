@@ -39,6 +39,11 @@
   margin-bottom: 20px;
   line-height: 100%;
 }
+.header p {
+  font-size: var(--header-text-size);
+  text-transform: uppercase;
+  line-height: 100%;
+}
 
 .card {
   background-color: var(--bg-color);
@@ -55,6 +60,9 @@
 
 .card-header h3 {
   font-variation-settings: 'wght' var(--weight-bold), 'wdth' var(--wdth);
+  line-height: 1.2;
+  letter-spacing: 0;
+  vertical-align: middle;
 }
 
 .image-wrapper {
@@ -236,7 +244,7 @@ button:not(.card__icon-button):hover .button__text {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .footer {
@@ -353,6 +361,7 @@ svg .main-body {
 }
 
 @media (min-width: 768px) {
+
   .footer-button svg {
     width: 21px;
     height: 21px;
