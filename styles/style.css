@@ -145,6 +145,8 @@ button:hover {
 button:not(.card__icon-button) {
   position: relative;
   overflow: hidden;
+  border: 2px solid var(--themes-color);
+  color: var(--themes-color);
 }
 
 .card__icon-button {
@@ -186,17 +188,18 @@ button:not(.card__icon-button):hover .button__text {
   mix-blend-mode: difference;
 }
 
-.footer-button {
-  width: 306px;
-  height: 84px;
+.flex-button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.footer-button {
+  min-width: 306px;
+  min-height: 84px;
   gap: 8px;
   margin: 0 auto;
-  border: 2px solid var(--themes-color);
-  color: var(--themes-color);
 }
 
 .footer-button svg {
@@ -278,9 +281,8 @@ body:has(dialog[open]) {
 
 .dialog-button {
   width: 100%;
+  min-height: 38px;
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
 }
 
 svg .sparks {
@@ -358,8 +360,8 @@ svg .main-body {
 
   .footer-button {
     flex-direction: row;
-    width: 335px;
-    height: 55px;
+    min-width: 335px;
+    min-height: 55px;
   }
 }
 
