@@ -70,7 +70,7 @@
 }
 
 .image-wrapper img {
-  height: 696px;
+  width: 100%;
   aspect-ratio: 1 / 1;
 }
 
@@ -249,8 +249,7 @@ button:not(.card__icon-button) svg {
 .dialog {
   font-family: var(--font-family-secondary);
   padding: 30px 40px;
-  width: 341px;
-  max-width: 90vw;
+  max-width: 353px;
 }
 
 .dialog-top {
