@@ -34,9 +34,8 @@
     --weight-regular: 410;
     --weight-bold: 715;
 
-    --font-family-primary: 'Inter', sans-serif;
-    --font-family-secondary: 'PressStart2P', monospace;
-    --text-bold: 700;
+    --font-family-primary: 'Inter-Variable', sans-serif;
+    --font-family-secondary: 'PressStart2P', fantasy;
     --text-regular: 400;
     --main-text-size: 18px;
     --title-size: clamp(49px, 4.5vw, 65px);
