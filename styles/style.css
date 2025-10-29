@@ -73,36 +73,36 @@
   aspect-ratio: 1 / 1;
 }
 
-.pic-one {
+.inspiring-filter { 
   filter: brightness(110%) contrast(120%);
 }
 
-.pic-two {
-  filter: hue-rotate(-90deg);
+.cool-filter { 
+  filter: hue-rotate(-90deg); 
 }
 
-.pic-three {
-  filter: grayscale(1);
+.memory-filter { 
+  filter: grayscale(1); 
 }
 
-.pic-four {
-  filter: saturate(2) contrast(140%);
+.vivid-filter { 
+  filter: saturate(2) contrast(140%); 
 }
 
-.pic-five {
-  filter: invert(1);
+.inverted-filter { 
+  filter: invert(1); 
 }
 
-.pic-six {
-  filter: contrast(1.5) brightness(0.8) grayscale(0.3);
+.complex-filter { 
+  filter: contrast(1.5) brightness(0.8) grayscale(0.3); 
 }
 
-.pic-seven {
-  filter: blur(0.2rem);;
+.blurred-filter { 
+  filter: blur(0.2rem); 
 }
 
-.pic-eight {
-  filter: sepia(0.6);
+.vintage-filter { 
+  filter: sepia(0.6); 
 }
 
 .image-logo {
@@ -161,11 +161,11 @@ button:not(.card__icon-button) {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: outline 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--themes-color);
-  transition: outline 0.3s ease;
 }
 
 button:not(.card__icon-button):focus {
@@ -217,7 +217,6 @@ button:not(.card__icon-button):hover .button__text {
 
 .footer-button:hover svg {
   color: #fff;
-  fill: #fff;
   z-index: 10;
   position: relative;
 }
@@ -232,7 +231,6 @@ button:not(.card__icon-button):hover .button__text {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--themes-color);
 }
 
 .card-footer {
@@ -297,7 +295,7 @@ svg .sparks {
 }
 
 svg .contour {
-  transition: fill 0.1s ease;
+  transition: fill 0.1s linear;
 }
 
 svg .core {
@@ -316,10 +314,12 @@ svg .main-body {
 
 .like-icon:hover .core {
   fill: var(--heart-contour-color);
+  transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
   fill: var(--heart-contour-color);
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:active .core {
